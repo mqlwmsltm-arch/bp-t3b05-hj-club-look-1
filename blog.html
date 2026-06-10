@@ -1,295 +1,129 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>합정역 클럽 가성비 챙기는 실전 꿀팁 | HJ CLUB LOOK 블로그</title>
-    <meta name="description" content="합정동 및 홍대지구 인근 클럽 가라오케 방문 시 바가지를 면하고 개인정보를 수호하는 공략법. 에드워드 스노든의 PRISM 경고를 곁들인 Bro의 정론 포스팅.">
-    <meta name="keywords" content="합정역 클럽 꿀팁, 합정동 가라오케 예약법, 마포 비즈니스 룸싸롱, 합정역 룸노래방 주대">
-    <link rel="canonical" href="https://t3b05-hj-club-look-1.pages.dev/blog.html">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --cyber-black: #050308;
-            --cyber-dark: #0f0b17;
-            --neon-violet: #d946ef;
-            --neon-blue: #00d9ff;
-            --neon-magenta: #ff007f;
-            --text-neon: #f8f5fc;
-            --text-dim: #9ca3af;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            background: var(--cyber-black);
-            color: var(--text-neon);
-            min-height: 100vh;
-            line-height: 1.8;
-            overflow-x: hidden;
-        }
-
-        header {
-            width: 100%;
-            background: rgba(15, 11, 23, 0.95);
-            border-bottom: 2px solid var(--neon-violet);
-            box-shadow: 0 0 15px rgba(217, 70, 239, 0.3);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1.1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.6rem;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 0 5px #fff, 0 0 10px var(--neon-violet), 0 0 20px var(--neon-violet);
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--text-neon);
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 700;
-            transition: all 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--neon-blue);
-            text-shadow: 0 0 8px var(--neon-blue);
-        }
-
-        .hotline-btn {
-            background: transparent;
-            border: 2px solid var(--neon-violet);
-            padding: 0.6rem 1.3rem;
-            border-radius: 4px;
-            color: #fff;
-            font-weight: 700;
-            text-decoration: none;
-            box-shadow: 0 0 8px rgba(217, 70, 239, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .hotline-btn:hover {
-            background: var(--neon-violet);
-            color: #fff;
-            box-shadow: 0 0 20px rgba(217, 70, 239, 0.7);
-        }
-
-        main {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        .post-content {
-            background: var(--cyber-dark);
-            border: 1px solid rgba(217, 70, 239, 0.08);
-            border-radius: 8px;
-            padding: 3rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-        }
-
-        .post-header {
-            margin-bottom: 2.5rem;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-            padding-bottom: 1.5rem;
-        }
-
-        .post-title {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.2rem;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 0 8px var(--neon-violet);
-            line-height: 1.3;
-            margin-bottom: 1rem;
-        }
-
-        .post-meta {
-            font-size: 0.9rem;
-            color: var(--neon-violet);
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-
-        .post-content h2 {
-            font-size: 1.55rem;
-            color: #fff;
-            text-shadow: 0 0 4px var(--cyber-dark);
-            margin: 2rem 0 1rem 0;
-            border-left: 4px solid var(--neon-violet);
-            padding-left: 0.8rem;
-        }
-
-        .post-content p {
-            color: #cbd5e1;
-            font-size: 1.05rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-
-        .post-content strong {
-            color: #fff;
-        }
-
-        .post-content a {
-            color: var(--neon-blue);
-            text-decoration: none;
-            font-weight: 700;
-            border-bottom: 1px dashed var(--neon-blue);
-            transition: all 0.3s ease;
-        }
-
-        .post-content a:hover {
-            color: #fff;
-            text-shadow: 0 0 5px var(--neon-blue);
-            border-bottom-color: #fff;
-        }
-
-        .info-box {
-            background: rgba(217, 70, 239, 0.03);
-            border: 1px dashed var(--neon-violet);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-
-        .back-link {
-            text-align: center;
-            margin-top: 3rem;
-        }
-
-        .back-link a {
-            color: var(--neon-violet);
-            text-decoration: none;
-            font-weight: 700;
-            transition: all 0.3s ease;
-        }
-
-        .back-link a:hover {
-            color: #fff;
-        }
-
-        footer {
-            background: #030205;
-            border-top: 2px solid var(--neon-violet);
-            padding: 3.5rem 2rem;
-            text-align: center;
-            font-size: 0.9rem;
-            color: var(--text-dim);
-        }
-
-        .footer-logo {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.4rem;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 0 8px var(--neon-blue);
-            margin-bottom: 1.1rem;
-            display: inline-block;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 2rem 0;
-            list-style: none;
-        }
-
-        .footer-links a {
-            color: var(--text-dim);
-            text-decoration: none;
-            font-weight: 700;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: var(--neon-violet);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="bpaas-design-system" content="brutalist-avantgarde">
+  <meta name="bpaas-design-theme" content="kr-raw-concrete">
+  <meta name="description" content="합정 클럽 룩북 블로그 — 진짜 클럽 룩의 기준을 세운다. 평범한 패션 찌질이들은 뒤로 물러서라. 한 번 읽으면 너의 옷장이 바뀐다.">
+  <meta name="keywords" content="합정클럽룩북, 합정클럽, 클럽룩북, 스트릿패션, 브루탈리즘패션, 합정룩, 클럽패션블로그">
+  <meta name="author" content="합정 클럽 룩북">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://t3b05-hj-club-look-1.vercel.app/blog">
+  <!-- OG / Twitter -->
+  <meta property="og:title" content="합정 클럽 룩북 | 블로그 — 너, 진짜 룩을 알고 있냐?">
+  <meta property="og:description" content="합정 클럽 씬을 지배하는 단 하나의 패션 지침서. 브루탈리즘의 정수를 블로그로 만나라.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://t3b05-hj-club-look-1.vercel.app/blog">
+  <meta property="og:site_name" content="합정 클럽 룩북">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="합정 클럽 룩북 | 블로그 — 너, 진짜 룩을 알고 있냐?">
+  <meta name="twitter:description" content="합정 클럽 씬을 지배하는 단 하나의 패션 지침서. 브루탈리즘의 정수를 블로그로 만나라.">
+  <title>합정 클럽 룩북 | 블로그</title>
+  <style>
+    /* 핵심 CSS (이전 페이지와 동일) */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Courier New', Courier, monospace; background: #1a1a1a; color: #e0e0e0; line-height: 1.6; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    /* 헤더 */
+    header { background: #0d0d0d; border-bottom: 4px solid #ff3b3b; padding: 20px 0; }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 2rem; font-weight: 900; text-transform: uppercase; letter-spacing: -2px; color: #ff3b3b; text-decoration: none; }
+    .logo:hover { color: #fff; }
+    /* 네비게이션 */
+    nav ul { list-style: none; display: flex; gap: 30px; }
+    nav a { color: #ccc; text-decoration: none; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 5px 0; border-bottom: 2px solid transparent; transition: 0.2s; }
+    nav a:hover, nav a.active { color: #ff3b3b; border-bottom-color: #ff3b3b; }
+    /* 햄버거 메뉴 (모바일) */
+    .menu-toggle { display: none; flex-direction: column; cursor: pointer; }
+    .menu-toggle span { width: 28px; height: 3px; background: #fff; margin: 4px 0; transition: 0.3s; }
+    @media (max-width: 768px) {
+      .menu-toggle { display: flex; }
+      nav ul { display: none; flex-direction: column; background: #0d0d0d; position: absolute; top: 70px; right: 20px; width: 200px; padding: 20px; border: 1px solid #ff3b3b; gap: 15px; }
+      nav ul.open { display: flex; }
+      nav a { font-size: 1rem; }
+    }
+    /* 메인 */
+    main { padding: 60px 0; min-height: 80vh; }
+    .page-title { font-size: 3rem; font-weight: 900; text-transform: uppercase; letter-spacing: -3px; margin-bottom: 10px; color: #ff3b3b; }
+    .page-sub { font-size: 1.2rem; color: #888; margin-bottom: 40px; border-left: 4px solid #ff3b3b; padding-left: 15px; }
+    /* 블로그 포스트 */
+    .blog-post { background: #222; padding: 40px; border: 2px solid #333; margin-bottom: 40px; }
+    .blog-post h2 { font-size: 2.2rem; font-weight: 900; text-transform: uppercase; letter-spacing: -1px; margin-bottom: 20px; color: #ff3b3b; }
+    .blog-post .meta { color: #777; font-size: 0.85rem; margin-bottom: 25px; border-bottom: 1px solid #333; padding-bottom: 15px; }
+    .blog-post p { margin-bottom: 20px; font-size: 1.05rem; }
+    .blog-post strong { color: #ff3b3b; }
+    .blog-post blockquote { border-left: 4px solid #ff3b3b; padding-left: 20px; margin: 30px 0; font-style: italic; color: #bbb; font-size: 1.1rem; }
+    .blog-post .cta { background: #ff3b3b; color: #0d0d0d; display: inline-block; padding: 12px 30px; font-weight: 900; text-transform: uppercase; text-decoration: none; letter-spacing: 1px; margin-top: 10px; border: none; cursor: pointer; transition: 0.2s; }
+    .blog-post .cta:hover { background: #fff; color: #0d0d0d; }
+    /* 푸터 */
+    footer { background: #0d0d0d; border-top: 4px solid #ff3b3b; padding: 30px 0; text-align: center; color: #666; font-size: 0.85rem; }
+    footer a { color: #ff3b3b; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    /* 반응형 */
+    @media (max-width: 768px) {
+      .blog-post { padding: 25px; }
+      .blog-post h2 { font-size: 1.8rem; }
+      .page-title { font-size: 2.2rem; }
+    }
+  </style>
 </head>
 <body>
-
-    <header>
-        <div class="nav-container">
-            <a href="/" class="logo">HJ CLUB LOOK</a>
-            <ul class="nav-links">
-                <li><a href="/">홈</a></li>
-                <li><a href="about.html">소개</a></li>
-                <li><a href="blog.html">블로그</a></li>
-            </ul>
-            <a href="tel:010-6279-0862" class="hotline-btn">접속 시그널</a>
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="logo">합정클럽룩북</a>
+      <nav>
+        <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('open')">
+          <span></span><span></span><span></span>
         </div>
-    </header>
-
-    <main>
-        <article class="post-content">
-            <div class="post-header">
-                <span class="post-meta">SYSTEM SECURITY // 2026.05.27</span>
-                <h1 class="post-title">합정역 밤거리 가라오케에서 덤터기와 익명 유출을 원천 해킹 차단하는 꿀팁</h1>
-            </div>
-
-            <p>어이 형들, 요즘 소리 없는 개인정보 전쟁 속에서 다들 잘 살아남고 있냐? 에드워드 스노든이 폭로한 NSA의 악명 높은 전방위 도청망 <a href="https://t3b05-hj-club-look-1.pages.dev/">PRISM 감시망</a>은 결코 남의 나라 이야기가 아니야. 매일 밤 합정동과 홍대의 현란한 가라오케 골목에서 벌어지는 일들 또한, 형들의 지갑 한도와 개인 연락처를 무차별 마이닝하여 장사해 먹으려는 보이지 않는 양아치 중개 브로커들의 거대한 매트릭스 시스템과 정확히 똑같은 맥락이란 말이지.</p>
-
-            <h2>1. 중개 감시망 필터링과 '정찰제 암호 보호막'</h2>
-            <p>형들이 술김에 아무 삐끼에게 번호를 주거나 검증되지 않은 가라오케 룸에 들어서는 행동은, 형들의 스마트폰 정보와 예산 한도를 바가지 보스에게 즉시 노출해버리는 보안 침해야. 이 썩어빠진 유흥 도청망을 회피하고 극강의 가성비를 선점하기 위한 최선의 사기 빌드는 <a href="about.html">합정 클럽 룩북넷 안심 철학</a>을 토대로 미리 <strong>010-6279-0862</strong> 핫라인 시그널을 송출하는 거야. 사전에 주대와 옵션 가격을 암호화하여 고정 합의해두면, 현장 양아치 업자들은 일체의 추가 덤터기를 꽂아 넣지 못하고 그대로 무력화된다고.</p>
-
-            <h2>2. 이성적인 지갑 보호 매핑 프로토콜</h2>
-            <p>두 번째 보안 수칙은 강렬한 네온 바이올렛 조명과 매니저의 말빨 세뇌 프로토콜에 정신을 빼앗겨 카드를 함부로 넘겨주지 않는 거야. 반드시 사전에 확정받은 예약 가격표와 최종 결제 단말기에 인쇄된 숫자를 이성적으로 대조 확인해야 돼. 팩트 가격을 뇌에 명확하게 락온(Lock-On)해두면 형들의 주머니는 무적의 보호막을 얻게 되는 거야.</p>
-
-            <div class="info-box">
-                <strong>🔒 합정역 생존 안심 요약</strong><br>
-                1. 의심스러운 호객 삐끼 번호 전달 차단.<br>
-                2. 검증된 다이렉트 핫라인 <strong>010-6279-0862</strong>를 통해 정찰 요금 확정.<br>
-                3. 결제 시 이중 마진 노이즈 차단.
-            </div>
-
-            <p>결국 우리가 합정/홍대의 어지러운 밤바다에서 지갑과 프라이버시를 완벽하게 보전하는 열쇠는 스마트한 정보의 통제야. 스노든의 폭로 정신처럼 투명한 팩트를 바탕으로 움직이고 양심 가성비 라이프를 즐기길 바란다, Bro!</p>
-
-            <div class="back-link">
-                <a href="/">← 홈으로 돌아가기</a>
-            </div>
-        </article>
-    </main>
-
-    <footer>
-        <span class="footer-logo">HJ CLUB LOOK</span>
-        <p>RESERVATION: 010-6279-0862 (부재시 문자 필)</p>
-        <ul class="footer-links">
-            <li><a href="/">홈</a></li>
-            <li><a href="about.html">소개</a></li>
-            <li><a href="blog.html">블로그</a></li>
+        <ul>
+          <li><a href="/">룩북</a></li>
+          <li><a href="/blog" class="active">블로그</a></li>
+          <li><a href="/gallery">갤러리</a></li>
+          <li><a href="/contact">문의</a></li>
         </ul>
-        <p>© 2026 HJ Club Look. All rights reserved. 합정 클럽 룩북 데이터 정밀 리포트.</p>
-    </footer>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <div class="container">
+      <h1 class="page-title">블로그</h1>
+      <p class="page-sub">평범한 패션 팁은 여기 없다. 진짜 합정 클럽 룩의 기준을 직접 써내려간다.</p>
+
+      <article class="blog-post">
+        <h2>합정 클럽에서 살아남는 법 — 룩 하나로 널 증명해라</h2>
+        <div class="meta">2025.02.24 | 작성: 합정클럽룩북 에디터 | 조회: 2,847</div>
+        <p><strong>야, 너 오늘 밤 클럽 갈 거지?</strong> 근데 그 티셔츠랑 청바지 입고 갈 생각이라면 당장 집에 처박혀 있어라. 합정 클럽 씬은 <strong>룩으로 말하는</strong> 곳이다. 니가 뭘 입었는지가 니가 누군지를 결정한다. 난 수많은 찌질이들이 실패하는 꼴을 봐왔다. 이 글은 그런 실패를 반복하지 않기 위한 <strong>생존 가이드</strong>다.</p>
+
+        <p>합정은 <strong>브루탈리즘 패션</strong>의 성지다. 콘크리트 같은 질감, 날카로운 실루엣, 과감한 레이어링. 여기서 튀는 건 기본이 아니라 <strong>의무</strong>다. 옷장에서 제일 평범한 옷부터 버려라. 대신 오버사이즈 블랙 코트, 낡은 워싱 데님, 무거운 부츠, 그리고 <strong>포인트는 레드</strong> — 브루탈리즘의 피는 붉다. 내가 말한 대로만 따라와라. 니가 클럽 문을 열자마자 사람들이 고개를 돌릴 거다.</p>
+
+        <blockquote>
+          “옷이 사람을 만든다는 말, 개소리처럼 들리겠지만 합정 클럽에선 사실이다. 니가 룩을 지배하지 못하면 클럽이 널 지배한다.”
+        </blockquote>
+
+        <p><strong>첫째, 레이어링은 필수다.</strong> 클럽 안은 덥지만 밖은 쌀쌀하다. 얇은 셔츠 위에 두꺼운 자켓, 그 위에 베스트. 질감은 매끄럽고 거친 걸 섞어라. 가죽+면, 데님+울. <strong>둘째, 액세서리를 얕보지 마라.</strong> 체인 하나, 반지 두세 개, 혹은 빈티지 선글라스. 이게 전체 룩을 완성한다. <strong>셋째, 신발은 무조건 무거운 걸로.</strong> 운동화 찌질이들은 입장 거절당한 썰을 인터넷에나 올려라.</p>
+
+        <p>이게 다가 아니다. 진짜 룩은 <strong>태도</strong>에서 나온다. 옷만 입고 가만히 서 있으면 전시장의 마네킹이랑 뭐가 다르냐? 걸음걸이, 시선, 말투까지 하나의 룩으로 완성해라. 난 너가 평범한 옷 입은 애들 사이에서 <strong>알파</strong>로 군림하는 모습을 보고 싶다. 준비됐냐? 그럼 오늘 밤, 합정에서 보자.</p>
+
+        <a href="#" class="cta">진짜 룩 보러 가기 →</a>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 합정 클럽 룩북 | <a href="#">Instagram</a> | <a href="#">문의</a><br>
+      합정 클럽 씬의 기준을 다시 세운다 — <strong>#브루탈리즘패션</strong></p>
+    </div>
+  </footer>
+
+  <script>
+    // 모바일 메뉴 토글 (기존 동일)
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('nav ul').classList.toggle('open');
+    });
+  </script>
 </body>
 </html>

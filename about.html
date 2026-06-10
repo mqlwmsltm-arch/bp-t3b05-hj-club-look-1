@@ -3,395 +3,386 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>합정 클럽 룩북 소개 | 안심 예약 디렉터 Bro의 양심 고백</title>
-    <meta name="description" content="마포구 합정동 일대에서 덤터기와 바가지를 종식시키고 정찰제 클럽 및 가라오케 정보를 공개하는 분석 플랫폼 스토리. 정직한 밤문화를 수호합니다.">
-    <meta name="keywords" content="합정 클럽 소개, 합정동 가라오케 가격 분석, 마포구 가라오케 정찰제, 합정역 유흥 예약 마스터">
-    <link rel="canonical" href="https://t3b05-hj-club-look-1.pages.dev/about.html">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <meta name="description" content="합정 클럽 룩북 — 현장의 진실. 브루탈리즘 패션이 살아 숨쉬는 곳, 합정 클럽 신의 정보를 원시 그대로 공개한다. 입장 전 알아야 할 모든 것.">
+    <meta name="keywords" content="합정클럽룩북, 합정클럽정보, 클럽드레스코드, 합정야간문화, 브루탈리즘패션, 합정입장정보">
+    <meta name="author" content="합정 클럽 룩북">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b05-hj-club-look-1.vercel.app/info">
     
-    <style>
-        :root {
-            --cyber-black: #050308;
-            --cyber-dark: #0f0b17;
-            --neon-violet: #d946ef;
-            --neon-blue: #00d9ff;
-            --neon-magenta: #ff007f;
-            --text-neon: #f8f5fc;
-            --text-dim: #9ca3af;
-        }
+    <!-- OG / Twitter -->
+    <meta property="og:title" content="합정 클럽 룩북 | 정보 — 규칙은 없다">
+    <meta property="og:description" content="입장 시간, 드레스 코드, 위치. 모든 건 예외다. 합정 클럽 신을 경험할 준비가 됐다면 직접 부딪혀라.">
+    <meta property="og:image" content="https://t3b05-hj-club-look-1.vercel.app/assets/og-info.jpg">
+    <meta property="og:url" content="https://t3b05-hj-club-look-1.vercel.app/info">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="합정 클럽 룩북 | 정보">
+    <meta name="twitter:description" content="눈으로만 보지 말고 발로 뛰어라. 합정의 진짜 클럽 정보.">
+    
+    <!-- 파비콘 및 기존 시스템 리소스 -->
+    <link rel="icon" type="image/svg+xml" href="https://t3b05-hj-club-look-1.vercel.app/favicon.svg">
+    <link rel="shortcut icon" href="https://t3b05-hj-club-look-1.vercel.app/favicon.ico">
+    <link rel="apple-touch-icon" href="https://t3b05-hj-club-look-1.vercel.app/apple-touch-icon.png">
 
+    <title>합정 클럽 룩북 | 정보 — 원초적인 것들</title>
+    <!-- 완전 동일 CSS 시스템 재사용 (inline 또는 link - 디자인 시스템 유지) -->
+    <style>
+        /* ===== BRUTALIST-AVANTGARDE SYSTEM v2.4 ===== */
+        /* kr-raw-concrete theme applied */
+        :root {
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #2c2c2c;
+            --text-primary: #f0f0f0;
+            --text-secondary: #b0b0b0;
+            --accent: #d43131;
+            --accent-hover: #ff4d4d;
+            --border-thick: 4px solid var(--text-primary);
+            --border-light: 2px solid var(--text-secondary);
+            --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+            --font-sans: 'Inter', 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+            --max-width: 1200px;
+            --spacing-unit: 1rem;
+        }
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            background: var(--cyber-black);
-            color: var(--text-neon);
-            min-height: 100vh;
-            line-height: 1.8;
-            overflow-x: hidden;
+        html {
+            scroll-behavior: smooth;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.5;
+        }
+        a {
+            color: inherit;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        a:hover {
+            color: var(--accent);
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        /* Layout Systems */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+        .grid {
+            display: grid;
+            gap: var(--spacing-unit);
+        }
+        .grid-2 {
+            grid-template-columns: 1fr 1fr;
+        }
+        .grid-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .flex {
+            display: flex;
+            gap: var(--spacing-unit);
+            flex-wrap: wrap;
+        }
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .stack {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-unit);
+        }
+        /* Typography */
+        .display {
+            font-family: var(--font-mono);
+            font-size: clamp(2.5rem, 8vw, 6rem);
+            font-weight: 900;
+            line-height: 0.9;
+            text-transform: uppercase;
+            letter-spacing: -0.03em;
+        }
+        .heading-xl {
+            font-family: var(--font-mono);
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+        .heading-lg {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            font-weight: 700;
+            font-family: var(--font-mono);
+        }
+        .heading-md {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        .body-text {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            max-width: 65ch;
+        }
+        .body-text strong {
+            color: var(--text-primary);
+        }
+        .small-text {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        /* Blocks & Sections */
+        .section {
+            padding: 4rem 0;
+            border-bottom: var(--border-light);
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        .card {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-left: var(--border-thick);
             position: relative;
         }
-
-        /* Scanline Overlay */
-        body::before {
-            content: " ";
-            display: block;
-            position: fixed;
-            top: 0; left: 0; bottom: 0; right: 0;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(217, 70, 239, 0.04), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.04));
-            z-index: 99999;
-            background-size: 100% 4px, 6px 100%;
-            pointer-events: none;
+        .card::before {
+            content: '▸';
+            position: absolute;
+            left: -1.2rem;
+            top: 1.5rem;
+            color: var(--accent);
+            font-size: 1.5rem;
         }
-
-        header {
-            width: 100%;
-            background: rgba(15, 11, 23, 0.95);
-            border-bottom: 2px solid var(--neon-violet);
-            box-shadow: 0 0 15px rgba(217, 70, 239, 0.3);
-            position: sticky;
-            top: 0;
-            z-index: 100;
+        .card-accent {
+            background: var(--bg-primary);
+            border: 2px solid var(--accent);
         }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1.1rem 2rem;
+        .tag {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--bg-primary);
+            padding: 0.2rem 0.8rem;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .hr-brutal {
+            border: none;
+            border-top: var(--border-thick);
+            margin: 2rem 0;
+        }
+        .btn-brutal {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background: transparent;
+            border: var(--border-thick);
+            color: var(--text-primary);
+            font-family: var(--font-mono);
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.15s ease;
+            cursor: pointer;
+        }
+        .btn-brutal:hover {
+            background: var(--text-primary);
+            color: var(--bg-primary);
+        }
+        .btn-brutal-accent {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: var(--bg-primary);
+        }
+        .btn-brutal-accent:hover {
+            background: var(--accent-hover);
+            border-color: var(--accent-hover);
+        }
+        /* Navigation */
+        .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 1rem 0;
+            border-bottom: var(--border-thick);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--bg-primary);
         }
-
-        .logo {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.6rem;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 0 5px #fff, 0 0 10px var(--neon-violet), 0 0 20px var(--neon-violet);
-            text-decoration: none;
-        }
-
         .nav-links {
             display: flex;
             gap: 2rem;
             list-style: none;
         }
-
         .nav-links a {
-            color: var(--text-neon);
             text-decoration: none;
-            font-size: 0.95rem;
+            font-family: var(--font-mono);
             font-weight: 700;
-            transition: all 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--neon-blue);
-            text-shadow: 0 0 8px var(--neon-blue);
-        }
-
-        .hotline-btn {
-            background: transparent;
-            border: 2px solid var(--neon-violet);
-            padding: 0.6rem 1.3rem;
-            border-radius: 4px;
-            color: #fff;
-            font-weight: 700;
-            text-decoration: none;
-            box-shadow: 0 0 10px rgba(217, 70, 239, 0.4);
-            transition: all 0.3s ease;
-        }
-
-        .hotline-btn:hover {
-            background: var(--neon-violet);
-            box-shadow: 0 0 20px rgba(217, 70, 239, 0.8);
-            text-shadow: 0 0 5px #fff;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        .page-title {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .page-title h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.8rem;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 0 10px var(--neon-violet);
-            margin-bottom: 1rem;
-        }
-
-        .page-title p {
-            color: var(--text-dim);
-            font-size: 1.1rem;
-        }
-
-        .cyber-box {
-            background: var(--cyber-dark);
-            border: 2px solid var(--neon-violet);
-            box-shadow: 0 0 20px rgba(217, 70, 239, 0.15);
-            border-radius: 8px;
-            padding: 3rem;
-            margin-bottom: 4rem;
-        }
-
-        .cyber-box h2 {
-            font-size: 2rem;
-            font-weight: 900;
-            color: #fff;
-            margin-bottom: 1.5rem;
-            text-shadow: 0 0 8px var(--neon-violet);
-            border-bottom: 2px solid var(--neon-violet);
-            padding-bottom: 0.5rem;
-        }
-
-        .cyber-box p {
-            font-size: 1.1rem;
-            color: #cbd5e1;
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-
-        .philosophy-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .philosophy-card {
-            background: rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            border-radius: 6px;
-            padding: 2rem;
-            transition: all 0.3s ease;
-        }
-
-        .philosophy-card:hover {
-            border-color: var(--neon-violet);
-            box-shadow: 0 0 10px rgba(217, 70, 239, 0.2);
-        }
-
-        .philosophy-card h3 {
-            font-size: 1.25rem;
-            color: var(--neon-violet);
-            margin-bottom: 1rem;
-            font-weight: 900;
-            text-shadow: 0 0 5px var(--neon-violet);
-        }
-
-        .philosophy-card p {
-            font-size: 0.95rem;
-            color: var(--text-dim);
-        }
-
-        /* UGC Reviews Block */
-        .ugc-section {
-            margin-bottom: 4rem;
-        }
-
-        .ugc-section h2 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.2rem;
-            font-weight: 900;
-            text-align: center;
-            margin-bottom: 3rem;
-            text-shadow: 0 0 8px var(--neon-violet);
-            color: #fff;
-        }
-
-        .ugc-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .ugc-item {
-            background: var(--cyber-dark);
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            border-radius: 6px;
-            padding: 2rem;
-            border-left: 4px solid var(--neon-violet);
-        }
-
-        .ugc-meta {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 0.8rem;
-            font-size: 0.95rem;
-            color: var(--neon-blue);
-            font-weight: 900;
-        }
-
-        .ugc-text {
-            color: #cbd5e1;
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        .back-link {
-            text-align: center;
-            margin-top: 3rem;
-        }
-
-        .back-link a {
-            color: var(--neon-violet);
-            text-decoration: none;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            text-shadow: 0 0 5px rgba(217, 70, 239, 0.2);
-        }
-
-        .back-link a:hover {
-            color: var(--neon-blue);
-            text-shadow: 0 0 8px var(--neon-blue);
-        }
-
-        footer {
-            background: #030205;
-            border-top: 2px solid var(--neon-violet);
-            padding: 3.5rem 2rem;
-            text-align: center;
+            text-transform: uppercase;
             font-size: 0.9rem;
-            color: var(--text-dim);
+            letter-spacing: 0.1em;
+            position: relative;
         }
-
-        .footer-logo {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.4rem;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 0 8px var(--neon-blue);
-            margin-bottom: 1.1rem;
-            display: inline-block;
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--accent);
         }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 2rem 0;
-            list-style: none;
+        .hamburger-menu {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
         }
-
-        .footer-links a {
-            color: var(--text-dim);
-            text-decoration: none;
-            font-weight: 700;
-            transition: color 0.3s ease;
+        .hamburger-menu span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: var(--text-primary);
+            margin: 5px 0;
+            transition: 0.3s;
         }
-
-        .footer-links a:hover {
-            color: var(--neon-violet);
+        /* Footer */
+        .footer {
+            padding: 2rem 0;
+            text-align: center;
+            border-top: var(--border-light);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        .footer a {
+            color: var(--text-primary);
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: var(--bg-primary);
+                position: absolute;
+                top: 100%;
+                right: 0;
+                width: 100%;
+                padding: 1rem;
+                border-bottom: var(--border-thick);
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: block;
+            }
+            .section {
+                padding: 2rem 0;
+            }
+            .card::before {
+                left: 0.5rem;
+                top: 0.5rem;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="nav-container">
-            <a href="/" class="logo">HJ CLUB LOOK</a>
-            <ul class="nav-links">
-                <li><a href="/">홈</a></li>
-                <li><a href="about.html">소개</a></li>
-                <li><a href="blog.html">블로그</a></li>
-            </ul>
-            <a href="tel:010-6279-0862" class="hotline-btn">접속 시그널</a>
-        </div>
-    </header>
-
-    <main>
-        <section class="page-title">
-            <h1>ABOUT CLUB PROTOCAL</h1>
-            <p>마포구 합정동 직장인들의 개인정보 유출을 차단하는 보안 지킴이 Bro의 다짐</p>
-        </section>
-
-        <section class="cyber-box">
-            <h2>합정 클럽 룩북의 강력한 익명 보안 철학</h2>
-            <p>형들 안녕. 합정동 일대의 은밀하고 왜곡된 유흥 가격 구조를 혁파해나가는 '보안 마스터 Bro'다. 마포구의 대표적인 비즈니스 밀집 상권인 합정동과 홍대 먹자골목은 수많은 직장인들과 핫한 트렌드 리더들이 회식과 2차 술자리를 찾는 핵심 거점이지. 하지만 외지인과 접대 수요가 몰리는 지리적 특성을 노려, 말장난 호객 수법으로 폭리를 취하려는 악덕 중개 시스템이 판을 치는 것도 엄연한 팩트야.</p>
-            
-            <p>우리는 단순히 삐끼의 호객 전단지를 나열하는 단순 플랫폼이 아니야. 에드워드 스노든이 미국 국가안보국(NSA)의 불법 도청 및 감시 시스템인 PRISM을 세상을 향해 과감히 폭로했듯, 우리 합정동 가라오케 역시 불필요한 번호 노출과 덤터기 계산 장난질을 해킹하고 무력화시켜. 010-6279-0862 다이렉트 핫라인 보안 라인은 형들의 피 같은 유흥 예산을 양아치 삐끼들로부터 완벽하게 엄호하고 지키는 시큐어 방화벽 프로토콜이야.</p>
-
-            <div class="philosophy-grid">
-                <div class="philosophy-card">
-                    <h3>1. 주대 디크립트 (해독)</h3>
-                    <p>현장에서 감정에 휩쓸려 무분별한 추가 요금을 뒤집어쓰지 않도록, 사전에 최종 주대 정찰 가격을 암호화하여 고정 매핑한다.</p>
-                </div>
-                <div class="philosophy-card">
-                    <h3>2. 시큐어 신원 보장</h3>
-                    <p>개인정보가 악성 스팸 브로커 리스트에 연동되지 않도록 철저히 익명성이 보장되는 1대1 다이렉트 핫라인 보안 시스템만 가동한다.</p>
-                </div>
-                <div class="philosophy-card">
-                    <h3>3. 노 바가지 수호</h3>
-                    <p>우리 예약 프로토콜을 통과하는 모든 팀은 불합리한 덤터기로부터 절대 안전하도록 완벽하게 정제된 가격 안심망을 보장받는다.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="ugc-section">
-            <h2>검증 요원들의 리얼 팩트 로그 (UGC)</h2>
-            <div class="ugc-list">
-                <div class="ugc-item">
-                    <div class="ugc-meta">
-                        <span>요원 ID: 합정동의밤</span>
-                        <span>평점: ★★★★★ | 업종: 가라오케 룸</span>
-                    </div>
-                    <div class="ugc-text">
-                        "합정역 주변에서 가성비 회식 2차 찾을 때마다 항상 바가지 요금 때문에 곤혹스러웠는데, Bro의 예약 라인을 알고 나서는 든든함 그 자체입니다. 가격을 미리 010-6279-0862 로 확실히 조율하고 가니까 계산할 때 영수증이 정직하게 똑떨어지더군요. 스팸 전화도 싹 사라졌습니다."
-                    </div>
-                </div>
-
-                <div class="ugc-item">
-                    <div class="ugc-meta">
-                        <span>요원 ID: 상수동해킹러</span>
-                        <span>평점: ★★★★★ | 업종: 비즈니스 룸</span>
-                    </div>
-                    <div class="ugc-text">
-                        "010-6279-0862 로 미리 네온 예약 신호 세팅해놓고 진입하니 진짜 사기 아이템 바른 것처럼 최상의 시설에서 기분 좋게 비즈니스 모임 성공했습니다. 바가지 씌우던 삐끼들 덤터기 코드를 원천 차단해주는 갓-Bro 시스템입니다."
-                    </div>
-                </div>
-
-                <div class="ugc-item">
-                    <div class="ugc-meta">
-                        <span>요원 ID: 홍대네온스타</span>
-                        <span>평점: ★★★★☆ | 업종: 프라이빗 가라오케</span>
-                    </div>
-                    <div class="ugc-text">
-                        "화려한 일렉트릭 네온 인테리어에 음향 감도 최고였고 무엇보다 추가 덤터기가 일절 없어서 영수증 팩트체크할 때 소름 돋게 흡족했습니다. 앞으로 합정동 2차 술자리는 이 루트로 무조건 고정입니다."
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="back-link">
-            <a href="/">← 합정 팩트 대시보드로 복귀</a>
-        </div>
-    </main>
-
-    <footer>
-        <span class="footer-logo">HJ CLUB LOOK</span>
-        <p>RESERVATION: 010-6279-0862 (부재시 문자 필)</p>
-        <ul class="footer-links">
-            <li><a href="/">홈</a></li>
-            <li><a href="about.html">소개</a></li>
-            <li><a href="blog.html">블로그</a></li>
+    <!-- 공통 내비게이션 -->
+    <nav class="navbar container">
+        <a href="/" style="font-family: var(--font-mono); font-weight: 900; text-transform: uppercase; text-decoration: none; font-size: 1.2rem;">합정룩북</a>
+        <button class="hamburger-menu" aria-label="메뉴 열기" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/">SHOW</a></li>
+            <li><a href="/looks">LOOKS</a></li>
+            <li><a href="/info" class="active">INFO</a></li>
         </ul>
-        <p>© 2026 HJ Club Look. All rights reserved. 합정 클럽 룩북 데이터 정밀 리포트.</p>
-    </footer>
+    </nav>
 
+    <!-- 메인 콘텐츠: 정보 페이지 -->
+    <main>
+        <!-- 히어로 -->
+        <section class="section" style="padding-bottom: 2rem;">
+            <div class="container stack">
+                <span class="tag">정보</span>
+                <h1 class="display">원초적인 것들</h1>
+                <p class="body-text" style="max-width: 80ch;">
+                    룩북을 봤으면 이제 현장으로 와라.<br>
+                    합정 클럽 신은 예약도, 가이드도 없다.<br>
+                    <strong>너의 발이 규칙이다.</strong> 이 페이지는 단서일 뿐, 직접 겪어야 진짜다.
+                </p>
+                <a href="#faq" class="btn-brutal btn-brutal-accent">자주 묻는 도발</a>
+            </div>
+        </section>
+
+        <!-- 핵심 정보 카드 3개 -->
+        <section class="section">
+            <div class="container grid grid-3">
+                <!-- 시간 -->
+                <article class="card">
+                    <h2 class="heading-md"><span style="color: var(--accent);">01</span> 시간</h2>
+                    <p class="body-text">
+                        금—토 : 22:00 — 늦음<br>
+                        일—목 : 알아서 찾아와라.<br>
+                        <strong>일찍 오면 기다린다.</strong> 늦게 오면 들어갈 순 있지만, 자리는 없다.
+                    </p>
+                </article>
+                <!-- 드레스 코드 -->
+                <article class="card">
+                    <h2 class="heading-md"><span style="color: var(--accent);">02</span> 드레스 코드</h2>
+                    <p class="body-text">
+                        정장? 거절. 트렌드? 거절.<br>
+                        <strong>진짜 너 자신</strong>을 입고 와라.<br>
+                        브루탈리즘 룩 — 거친 소재, 오버사이즈, 레이어드. 찢어져도 OK.
+                    </p>
+                </article>
+                <!-- 위치 -->
+                <article class="card">
+                    <h2 class="heading-md"><span style="color: var(--accent);">03</span> 위치</h2>
+                    <p class="body-text">
+                        합정역 2번 출구 — 그곳이 전부다.<br>
+                        지도는 필요 없다. 냄새, 소음, 불빛을 따라와라.<br>
+                        찾지 못하면 물어봐라. 모르면 그냥 발길 닿는 대로.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 상세 정보: 철학 + 강령 -->
+        <section class="section">
+            <div class="container grid grid-2">
+                <div class="stack">
+                    <h2 class="heading-xl">룩북의 룰</h2>
+                    <p class="body-text">
+                        이 사이트는 패션 블로그가 아니다.<br>
+                        합정 클럽 신에서 직접 포착한 진짜 룩을 기록한다.<br>
+                        브루탈리즘은 건축에서 태어나 거리로 흘러들었다.<br><br>
+                        당신이 여기서 본 모든 사진은<br>
+                        <strong>필터 없음, 포즈 없음, 거짓 없음.</strong>
+                    </p>
+                    <a href="/looks" class="btn-brutal">룩북 구경가기</a>
+                </div>
+                <div class="stack">
+                    <h
 </body>
 </html>
