@@ -1,388 +1,134 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <meta name="description" content="합정 클럽 룩북 — 현장의 진실. 브루탈리즘 패션이 살아 숨쉬는 곳, 합정 클럽 신의 정보를 원시 그대로 공개한다. 입장 전 알아야 할 모든 것.">
-    <meta name="keywords" content="합정클럽룩북, 합정클럽정보, 클럽드레스코드, 합정야간문화, 브루탈리즘패션, 합정입장정보">
-    <meta name="author" content="합정 클럽 룩북">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://hapjeong-club-info.node-link.shop/about.html">
-    
-    <!-- OG / Twitter -->
-    <meta property="og:title" content="합정 클럽 룩북 | 정보 — 규칙은 없다">
-    <meta property="og:description" content="입장 시간, 드레스 코드, 위치. 모든 건 예외다. 합정 클럽 신을 경험할 준비가 됐다면 직접 부딪혀라.">
-    <meta property="og:image" content="https://t3b05-hj-club-look-1.vercel.app/assets/og-info.jpg">
-    <meta property="og:url" content="https://hapjeong-club-info.node-link.shop/about.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="ko_KR">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="합정 클럽 룩북 | 정보">
-    <meta name="twitter:description" content="눈으로만 보지 말고 발로 뛰어라. 합정의 진짜 클럽 정보.">
-    
-    <!-- 파비콘 및 기존 시스템 리소스 -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="shortcut icon" href="https://t3b05-hj-club-look-1.vercel.app/favicon.ico">
-    <link rel="apple-touch-icon" href="https://t3b05-hj-club-look-1.vercel.app/apple-touch-icon.png">
-
-    <title>합정 클럽 룩북 | 정보 — 원초적인 것들</title>
-    <!-- 완전 동일 CSS 시스템 재사용 (inline 또는 link - 디자인 시스템 유지) -->
-    <style>
-        /* ===== BRUTALIST-AVANTGARDE SYSTEM v2.4 ===== */
-        /* kr-raw-concrete theme applied */
-        :root {
-            --bg-primary: #1a1a1a;
-            --bg-secondary: #2c2c2c;
-            --text-primary: #f0f0f0;
-            --text-secondary: #b0b0b0;
-            --accent: #d43131;
-            --accent-hover: #ff4d4d;
-            --border-thick: 4px solid var(--text-primary);
-            --border-light: 2px solid var(--text-secondary);
-            --font-mono: 'JetBrains Mono', 'Courier New', monospace;
-            --font-sans: 'Inter', 'Noto Sans KR', system-ui, -apple-system, sans-serif;
-            --max-width: 1200px;
-            --spacing-unit: 1rem;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            font-family: var(--font-sans);
-            line-height: 1.5;
-        }
-        a {
-            color: inherit;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-        }
-        a:hover {
-            color: var(--accent);
-        }
-        img {
-            max-width: 100%;
-            display: block;
-        }
-        /* Layout Systems */
-        .container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 var(--spacing-unit);
-        }
-        .grid {
-            display: grid;
-            gap: var(--spacing-unit);
-        }
-        .grid-2 {
-            grid-template-columns: 1fr 1fr;
-        }
-        .grid-3 {
-            grid-template-columns: repeat(3, 1fr);
-        }
-        .flex {
-            display: flex;
-            gap: var(--spacing-unit);
-            flex-wrap: wrap;
-        }
-        .flex-center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .stack {
-            display: flex;
-            flex-direction: column;
-            gap: var(--spacing-unit);
-        }
-        /* Typography */
-        .display {
-            font-family: var(--font-mono);
-            font-size: clamp(2.5rem, 8vw, 6rem);
-            font-weight: 900;
-            line-height: 0.9;
-            text-transform: uppercase;
-            letter-spacing: -0.03em;
-        }
-        .heading-xl {
-            font-family: var(--font-mono);
-            font-size: clamp(2rem, 5vw, 4rem);
-            font-weight: 800;
-            line-height: 1.1;
-            text-transform: uppercase;
-        }
-        .heading-lg {
-            font-size: clamp(1.5rem, 3vw, 2.5rem);
-            font-weight: 700;
-            font-family: var(--font-mono);
-        }
-        .heading-md {
-            font-size: 1.25rem;
-            font-weight: 600;
-        }
-        .body-text {
-            font-size: 1rem;
-            color: var(--text-secondary);
-            max-width: 65ch;
-        }
-        .body-text strong {
-            color: var(--text-primary);
-        }
-        .small-text {
-            font-size: 0.875rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        /* Blocks & Sections */
-        .section {
-            padding: 4rem 0;
-            border-bottom: var(--border-light);
-        }
-        .section:last-child {
-            border-bottom: none;
-        }
-        .card {
-            background: var(--bg-secondary);
-            padding: 1.5rem;
-            border-left: var(--border-thick);
-            position: relative;
-        }
-        .card::before {
-            content: '▸';
-            position: absolute;
-            left: -1.2rem;
-            top: 1.5rem;
-            color: var(--accent);
-            font-size: 1.5rem;
-        }
-        .card-accent {
-            background: var(--bg-primary);
-            border: 2px solid var(--accent);
-        }
-        .tag {
-            display: inline-block;
-            background: var(--accent);
-            color: var(--bg-primary);
-            padding: 0.2rem 0.8rem;
-            font-family: var(--font-mono);
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-        .hr-brutal {
-            border: none;
-            border-top: var(--border-thick);
-            margin: 2rem 0;
-        }
-        .btn-brutal {
-            display: inline-block;
-            padding: 0.75rem 2rem;
-            background: transparent;
-            border: var(--border-thick);
-            color: var(--text-primary);
-            font-family: var(--font-mono);
-            font-weight: 700;
-            text-transform: uppercase;
-            text-decoration: none;
-            transition: all 0.15s ease;
-            cursor: pointer;
-        }
-        .btn-brutal:hover {
-            background: var(--text-primary);
-            color: var(--bg-primary);
-        }
-        .btn-brutal-accent {
-            background: var(--accent);
-            border-color: var(--accent);
-            color: var(--bg-primary);
-        }
-        .btn-brutal-accent:hover {
-            background: var(--accent-hover);
-            border-color: var(--accent-hover);
-        }
-        /* Navigation */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-            border-bottom: var(--border-thick);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: var(--bg-primary);
-        }
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        .nav-links a {
-            text-decoration: none;
-            font-family: var(--font-mono);
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 0.1em;
-            position: relative;
-        }
-        .nav-links a.active::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: var(--accent);
-        }
-        .hamburger-menu {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0.5rem;
-        }
-        .hamburger-menu span {
-            display: block;
-            width: 28px;
-            height: 3px;
-            background: var(--text-primary);
-            margin: 5px 0;
-            transition: 0.3s;
-        }
-        /* Footer */
-        .footer {
-            padding: 2rem 0;
-            text-align: center;
-            border-top: var(--border-light);
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-        }
-        .footer a {
-            color: var(--text-primary);
-        }
-        /* Responsive */
-        @media (max-width: 768px) {
-            .grid-2, .grid-3 {
-                grid-template-columns: 1fr;
-            }
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background: var(--bg-primary);
-                position: absolute;
-                top: 100%;
-                right: 0;
-                width: 100%;
-                padding: 1rem;
-                border-bottom: var(--border-thick);
-            }
-            .nav-links.show {
-                display: flex;
-            }
-            .hamburger-menu {
-                display: block;
-            }
-            .section {
-                padding: 2rem 0;
-            }
-            .card::before {
-                left: 0.5rem;
-                top: 0.5rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>합정 클럽 정보</title>
+  <meta name="description" content="합정 클럽을 처음 찾는 사람들을 위해 필요한 모든 정보를 제공한다. 입장 기준, 시간대별 선택, 안전 팁, 현장 체크리스트 등을 상세히 안내한다.">
+  <meta name="keywords" content="합정 클럽, 클럽 정보, 합정 나이트, 클럽 입장 가이드, 클럽 안전">
+  <link rel="canonical" href="https://hapjeong-club-info.node-link.shop/about.html">
+  <meta property="og:title" content="합정 클럽 정보 — 현장 체크리스트와 선택 가이드">
+  <meta property="og:description" content="합정 클럽을 처음 찾는 사람들을 위한 입장 기준, 시간대별 선택, 안전 팁, 현장 체크리스트를 제공한다.">
+  <meta property="og:url" content="https://hapjeong-club-info.node-link.shop/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630">
+  <style>
+    :root{--primary:#ff4e50;--background:#111;--text:#fff;--accent:#0ff;}
+    body{margin:0;padding:0;font-family:'Inter',sans-serif;background:var(--background);color:var(--text);}
+    .m-ico-z7hx{display:inline-block;width:24px;height:24px;background:url('https://via.placeholder.com/24') center/contain no-repeat;}
+    .v-wrap-xjlz header,.v-wrap-xjlz main,.v-wrap-xjlz footer{max-width:1200px;margin:auto;padding:1rem;}
+    @media (max-width:768px){.v-wrap-xjlz header,.v-wrap-xjlz main,.v-wrap-xjlz footer{padding:.5rem;}}
+    .m-box-caas{background:rgba(255,255,255,.05);border-radius:8px;padding:1.5rem;margin-bottom:1rem;}
+    h1,h2,h3{margin:0 0 .5rem 0;font-weight:600;}
+    h1{font-size:2.2rem;color:var(--primary);}
+    h2{font-size:1.8rem;color:var(--accent);}
+    h3{font-size:1.5rem;color:var(--primary);}
+    p{line-height:1.6;margin:0 0 1rem 0;}
+    hr.k-txt-d8yp{border:none;border-top:1px solid rgba(255,255,255,.2);margin:2rem 0;}
+    table{width:100%;border-collapse:collapse;margin-bottom:1rem;}
+    th,td{padding:.75rem;border:1px solid rgba(255,255,255,.1);}
+    th{background:rgba(255,255,255,.1);}
+    button{background:var(--primary);color:#fff;border:none;padding:.75rem 1.5rem;border-radius:4px;cursor:pointer;}
+    a{color:var(--accent);text-decoration:none;}
+    nav{display:flex;gap:1rem;margin-bottom:1rem;}
+    nav a{color:var(--text);font-weight:500;}
+    .nav-present a:hover{color:var(--primary);}
+  </style>
 </head>
 <body>
+  <div class="v-wrap-xjlz">
+    <header>
+      <nav class="nav-present">
+        <a href="/index.html">홈</a>
+        <a href="/lookbook.html">룩북</a>
+        <a href="/info.html">정보</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/contact.html">연락처</a>
+      </nav>
+      <h1>합정 클럽 정보</h1>
+      <p>합정의 나이트라이프를 제대로 경험하고 싶다면, 이 페이지를 통해 현장 체크리스트와 선택 기준을 정확히 파악하세요.</p>
+    </header>
 
-    <!-- 공통 내비게이션 -->
-    <nav class="navbar container">
-        <a href="/" style="font-family: var(--font-mono); font-weight: 900; text-transform: uppercase; text-decoration: none; font-size: 1.2rem;">합정룩북</a>
-        <button class="hamburger-menu" aria-label="메뉴 열기" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="/">SHOW</a></li>
-            <li><a href="/looks">LOOKS</a></li>
-            <li><a href="/info" class="active">INFO</a></li>
-        </ul>
-    </nav>
-
-    <!-- 메인 콘텐츠: 정보 페이지 -->
     <main>
-        <!-- 히어로 -->
-        <section class="section" style="padding-bottom: 2rem;">
-            <div class="container stack">
-                <span class="tag">정보</span>
-                <h1 class="display">원초적인 것들</h1>
-                <p class="body-text" style="max-width: 80ch;">
-                    룩북을 봤으면 이제 현장으로 와라.<br>
-                    합정 클럽 신은 예약도, 가이드도 없다.<br>
-                    <strong>너의 발이 규칙이다.</strong> 이 페이지는 단서일 뿐, 직접 겪어야 진짜다.
-                </p>
-                <a href="#faq" class="btn-brutal btn-brutal-accent">자주 묻는 도발</a>
-            </div>
-        </section>
+      <section class="m-box-caas">
+        <h2>입장 전 확인해야 할 핵심 기준</h2>
+        <p>합정 클럽은 시간대별, 인원별, 목적별로 분위기가 크게 달라진다. 따라서 입장 전 반드시 체크해야 할 기준이 있다. 첫 번째는 <strong>인원 구성</strong>이다. 4인 이하의 소규모 그룹은 친밀한 분위기를, 10인 이상의 대규모 파티는 파워풀한 무대를 기대한다. 두 번째는 <strong>방문 시점</strong>이다. 오후 8시 이전은 비교적 여유로운 분위기이지만, 새벽 1시가 넘어가면 클럽 전체가 고조된 에너지와 소음 수준을 보인다.</p>
+        <p>세 번째는 <strong>목적</strong>이다. 단순히 음악을 즐기려는 경우와 네트워킹을 목표로 하는 경우, 두 경우에 맞는 라인업과 라운지 구역이 다르다. 음악 중심이라면 메인 플로어와 사운드 시스템을, 네트워킹이라면 라운지와 바 카운터 근처를 우선적으로 확인한다. 마지막으로 <strong>복장 규정</strong>을 간과하지 말라. 대부분의 클럽은 ‘자유’라는 명목 아래도 ‘과도한 캐주얼’은 제한한다.</p>
+      </section>
 
-        <!-- 핵심 정보 카드 3개 -->
-        <section class="section">
-            <div class="container grid grid-3">
-                <!-- 시간 -->
-                <article class="card">
-                    <h2 class="heading-md"><span style="color: var(--accent);">01</span> 시간</h2>
-                    <p class="body-text">
-                        금—토 : 22:00 — 늦음<br>
-                        일—목 : 알아서 찾아와라.<br>
-                        <strong>일찍 오면 기다린다.</strong> 늦게 오면 들어갈 순 있지만, 자리는 없다.
-                    </p>
-                </article>
-                <!-- 드레스 코드 -->
-                <article class="card">
-                    <h2 class="heading-md"><span style="color: var(--accent);">02</span> 드레스 코드</h2>
-                    <p class="body-text">
-                        정장? 거절. 트렌드? 거절.<br>
-                        <strong>진짜 너 자신</strong>을 입고 와라.<br>
-                        브루탈리즘 룩 — 거친 소재, 오버사이즈, 레이어드. 찢어져도 OK.
-                    </p>
-                </article>
-                <!-- 위치 -->
-                <article class="card">
-                    <h2 class="heading-md"><span style="color: var(--accent);">03</span> 위치</h2>
-                    <p class="body-text">
-                        합정역 2번 출구 — 그곳이 전부다.<br>
-                        지도는 필요 없다. 냄새, 소음, 불빛을 따라와라.<br>
-                        찾지 못하면 물어봐라. 모르면 그냥 발길 닿는 대로.
-                    </p>
-                </article>
-            </div>
-        </section>
+      <hr class="k-txt-d8yp">
 
-        <!-- 상세 정보: 철학 + 강령 -->
-        <section class="section">
-            <div class="container grid grid-2">
-                <div class="stack">
-                    <h2 class="heading-xl">룩북의 룰</h2>
-                    <p class="body-text">
-                        이 사이트는 패션 블로그가 아니다.<br>
-                        합정 클럽 신에서 직접 포착한 진짜 룩을 기록한다.<br>
-                        브루탈리즘은 건축에서 태어나 거리로 흘러들었다.<br><br>
-                        당신이 여기서 본 모든 사진은<br>
-                        <strong>필터 없음, 포즈 없음, 거짓 없음.</strong>
-                    </p>
-                    <a href="/looks" class="btn-brutal">룩북 구경가기</a>
-                </div>
-                <div class="stack">
-                    <h
+      <section class="m-box-caas">
+        <h2>시간대별 선택 가이드</h2>
+        <p>합정 클럽은 시간대마다 다른 라인업과 분위기를 제공한다. <strong>오후 6시~9시</strong>는 ‘프리 파티’ 라인업으로, 트렌디한 DJ와 롤플레이 라운지가 결합돼 분위기가 서서히 고조된다. 이 시간대는 입장 인원이 비교적 적고, 스페이스를 넉넉히 활용할 수 있다.</p>
+        <p><strong>밤 10시~12시</strong>는 ‘하이 피크’ 구간이며, 최고의 DJ가 무대를 장악한다. 이때는 입장 제한이 엄격해지며, 사전 예약 또는 멤버십이 필수인 경우가 많다. <strong>새벽 1시 이후</strong>는 ‘맥스 파워’ 단계로, 라운드 앤드 푸드 코너가 활기차고, 클럽 전체가 몰아치는 에너지에 휘말린다. 이때는 음량이 상승하고, 안주와 음료 서비스가 한층 강화된다.</p>
+        <p>각 시간대별로 <strong>입장 요금</strong>과 <strong>음료 스페셜</strong>이 다르게 적용된다. 프리 파티는 1인당 15,000원, 하이 피크는 25,000원, 맥스 파워는 30,000원으로 차등 부과되며, 특정 시간대는 ‘해피 아워’ 프로모션을 제공한다.</p>
+      </section>
+
+      <hr class="k-txt-d8yp">
+
+      <section class="m-box-caas">
+        <h2>현장 체크리스트</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>항목</th>
+              <th>점검 포인트</th>
+              <th>추천 행동</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>입장 인원</td>
+              <td>최소 2명·최대 12명</td>
+              <td>그룹 규모에 맞는 라운드 선택</td>
+            </tr>
+            <tr>
+              <td>복장 규정</td>
+              <td>스마트 캐주얼·신발 착용</td>
+              <td>신발 교체 서비스 이용</td>
+            </tr>
+            <tr>
+              <td>음악 라인업</td>
+              <td>시간대별 DJ 명단 확인</td>
+              <td>플레이리스트 사전 확인</td>
+            </tr>
+            <tr>
+              <td>안전 관리</td>
+              <td>출입문 비상구 위치 파악</td>
+              <td>스태프에게 비상절차 문의</td>
+            </tr>
+            <tr>
+              <td>음료·안주</td>
+              <td>스페셜 메뉴와 가격 확인</td>
+              <td>테이블 오더 앱 활용</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>위 체크리스트를 사전에 검토하면 현장에서 발생할 수 있는 불편을 최소화할 수 있다. 특히 ‘안전 관리’ 항목은 개인 안전을 위한 필수 요소이므로, 입장 직후 비상구와 보안 스태프 위치를 확인해 두는 것이 좋다.</p>
+        <p>클럽 내부는 조명이 어두워 시야 확보가 어려울 수 있다. 스마트폰 플래시를 최소화하고, 스태프에게 길 안내를 요청하면 부드러운 이동이 가능하다.</p>
+      </section>
+
+      <hr class="k-txt-d8yp">
+
+      <section class="m-box-caas">
+        <h2>FAQ</h2>
+        <h3>Q1. 1인 입장은 가능한가요?</h3>
+        <p>대부분의 클럽은 1인 입장을 제한한다. 최소 2인 이상의 그룹을 구성해야 입장이 허용되며, 혼자 방문 시 바 카운터에서 드링크만 즐길 수 있다.</p>
+
+        <h3>Q2. 입장 전 예약이 필요한가요?</h3>
+        <p>시간대별 인원 제한 정책에 따라 하이 피크와 맥스 파워 구간은 사전 예약 또는 멤버십 카드가 필요하다. 프리 파티는 현장 대기열을 통해 입장이 가능하지만, 대기 시간이 길어질 수 있다.</p>
+
+        <h3>Q3. 클럽 내 흡연은 가능한가요?</h3>
+        <p>합정 클럽은 전면 금연 정책을 시행한다. 일부 라운지에서는 전자담배 전용 구역을 운영하지만, 바와 메인 플로어는 전면 금연이다. 흡연이 필요할 경우, 지정된 외부 흡연 구역을 이용한다.</p>
+
+        <h3>Q4. 무제한 음료 옵션이 있나요?</h3>
+        <p>시간대와 라인업에 따라 ‘무제한 음료 플랜’이 제공된다. 보통 프리 파티와 하이 피크 구간에 한해 2시간 내 음료 무제한 패키지를 구매할 수 있다. 맥스 파워 구간은 별도 음료 쿠폰이 제공된다.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 합정 클럽 정보. 모든 권리 보유.</p>
+    </footer>
+  </div>
 </body>
 </html>
